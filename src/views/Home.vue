@@ -32,18 +32,14 @@ const change = (e) => {
 </script>
 
 <template>
-      <button class="bg-blue-400" @click="change('en')">en</button>
-  <button class="bg-red-400" @click="change('th')">th</button>
-  <!-- <div>{{ $t('hello', { user: 'benz', name: 'ppp' }) }}</div> -->
+     
   <div>{{ $t('TVC',) }}</div>
   <div>{{ $t('Product') }}</div>
     <header class="text-gray-700 body-font border-b border-gray-200">
   <div class="container mx-auto flex flex-wrap p-5 flex-col md:flex-row items-center">
     <a class="flex title-font font-medium items-center text-gray-900 mb-4 md:mb-0" href="https://tailblocks.cc" target="_blank">
-      <svg xmlns="http://www.w3.org/2000/svg" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" class="w-10 h-10 text-white p-2 bg-indigo-500 rounded-full" viewBox="0 0 24 24">
-        <path d="M12 2L2 7l10 5 10-5-10-5zM2 17l10 5 10-5M2 12l10 5 10-5"></path>
-      </svg>
-      <span class="ml-3 text-xl">TAILBLOCKS</span>
+      <img class="h-12 w-12 rounded-full" src="../assets/images/Lemon.jpg" alt="">
+      <span class="ml-3 text-xl profilefont">My Personal Profile</span>
     </a>
     <nav class="md:ml-auto flex flex-wrap items-center text-base justify-center">
       <a class="mr-5 hover:text-gray-900">First Link</a>
@@ -51,11 +47,13 @@ const change = (e) => {
       <a class="mr-5 hover:text-gray-900">Third Link</a>
       <a class="mr-5 hover:text-gray-900">Fourth Link</a>
     </nav>
-    <button class="inline-flex items-center bg-gray-200 border-0 py-1 px-3 focus:outline-none hover:bg-gray-300 rounded text-base mt-4 md:mt-0">Button
+    <button class="bg-blue-400" @click="change('en')">en</button>
+  <button class="bg-red-400" @click="change('th')">th</button>
+    <!-- <button class="inline-flex items-center bg-gray-200 border-0 py-1 px-3 focus:outline-none hover:bg-gray-300 rounded text-base mt-4 md:mt-0">Button
       <svg fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" class="w-4 h-4 ml-1" viewBox="0 0 24 24">
         <path d="M5 12h14M12 5l7 7-7 7"></path>
       </svg>
-    </button>
+    </button> -->
   </div>
 </header>
 <section class="text-gray-700 body-font">
@@ -764,3 +762,26 @@ const change = (e) => {
        
   
 </template>
+<style>
+@font-face {
+  font-family: 'profilefont';
+  src: url('../assets/styles/font/Ubuntu-Bold.ttf') format('truetype');
+  /* Add additional formats such as woff, woff2, etc. for better browser compatibility */
+}
+@font-face {
+  font-family: 'profilefont2';
+  src: url('../assets/styles/font/Ubuntu-Regular.ttf') format('truetype');
+  /* Add additional formats such as woff, woff2, etc. for better browser compatibility */
+}
+.profilefont{
+  font-family: 'profilefont', sans-serif;
+  color: black;
+}
+a {
+  font-family: 'profilefont2', sans-serif;
+}
+p {
+  font-family: 'profilefont2', sans-serif;
+}
+
+</style>
