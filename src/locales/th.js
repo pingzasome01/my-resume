@@ -22,7 +22,10 @@ export default {
     experience3 :'ขณะนี้กำลังทำงานอยู่ที่บริษัท Datafirst ในตำเเหน่ง Deverlopers',
     aptitude:'ขณะนี้งานที่กำลังทำอยู่จะเป็นส่วนของ front-end เป็นหลัก สกิลติดตัวที่มีก็จะเป็นในส่วนของ Design , css framework , vue.js(vite) (tailwind,bootstrap,vuetify) , animation on scroll , Responsive Design ',
     aptitude2 :'ชอบทำงานเป็นทีมเเละพร้อมจะเรียนรู้สิ่งใหม่ๆ'
-
-   
   },
+   Myskill:{
+    headskill:'ทักษะ เเละ อื่น ๆ',
+    title:'เป็นทักษะที่เคยใช้มาในการทำงาน เคยใช้ในระดับนึง มีบางตัวที่เคยใช้เเต่ไม่ถนัดมากเท่าไหร่ เลยไม่ได้ใส่มาด้วย'
+    
+  }
 }

@@ -23,5 +23,10 @@ export default {
     aptitude2 :'Like to work and ready to learn new things.'
    
   },
+  Myskill:{
+    headskill:'My Skill and Other',
+    title:'It is a skill that has been used in the workplace. used to some degree There are some that used to be used but not very good at it. So I did not put it in.'
+    
+  }
   
   }
