@@ -329,7 +329,7 @@ onMounted(() => {
           <div class="border border-gray-300 p-6 rounded-lg" data-aos="fade-up">
             <div class="lg:flex md:flex sm:flex-none" >
               <div
-                class="w-10 h-10 inline-flex items-center justify-center rounded-full bg-indigo-100 text-indigo-500 mb-4"
+                class="w-10 h-10 animate-pulse inline-flex items-center justify-center rounded-full bg-indigo-100 text-indigo-500 mb-4"
               >
                 <svg
                   fill="none"
@@ -363,7 +363,7 @@ onMounted(() => {
           <div class="border border-gray-300 p-6 rounded-lg">
             <div class="lg:flex md:flex sm:flex-none">
               <div
-                class="w-10 h-10 inline-flex items-center justify-center rounded-full bg-indigo-100 text-indigo-500 mb-4"
+                class="w-10 h-10 animate-pulse inline-flex items-center justify-center rounded-full bg-indigo-100 text-indigo-500 mb-4"
               >
                 <svg
                   fill="none"
@@ -415,7 +415,7 @@ onMounted(() => {
           <div class="border border-gray-300 p-6 rounded-lg">
             <div class="lg:flex md:flex  ">
               <div
-                class="w-10 h-10   justify-center rounded-full bg-indigo-100 text-indigo-500 mb-4 flex flex-col  items-center"
+                class="w-10 h-10 animate-pulse   justify-center rounded-full bg-indigo-100 text-indigo-500 mb-4 flex flex-col  items-center"
               >
                 <svg
                   fill="none"
