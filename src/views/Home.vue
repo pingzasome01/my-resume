@@ -303,11 +303,11 @@ onMounted(() => {
             <p data-aos="fade-left" data-aos-delay="700" class="leading-relaxed text-base">
               {{ $t('Myabout.aptitude2') }}
             </p>
-            <!-- <a class="mt-3 text-indigo-500 inline-flex items-center">Learn More
+            <a href="../assets/images/Lemon.jpg" download class="mt-3  text-indigo-500 inline-flex items-center">Dowloade Myresume
             <svg fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" class="w-4 h-4 ml-2" viewBox="0 0 24 24">
               <path d="M5 12h14M12 5l7 7-7 7"></path>
             </svg>
-          </a> -->
+          </a>
           </div>
         </div>
       </div>
@@ -408,6 +408,10 @@ onMounted(() => {
                 <img class="w-8 h-8" src="../assets/images/logo/swiper.png" alt="" />
                 <a>Swiper</a>
               </div>
+              <div class="p-4 flex flex-col items-center">
+                <img class="w-8 h-8" src="../assets/images/logo/daisy.webp" alt="" />
+                <a>DaisyUi</a>
+              </div>
             </div>
           </div>
         </div>
@@ -450,6 +454,26 @@ onMounted(() => {
               <div class="p-4 flex flex-col items-center">
                 <img class="w-8 h-8" src="../assets/images/logo/sourcetree.png" alt="" />
                 <a>Sourcetree</a>
+              </div>
+              <div class="p-4 flex flex-col items-center">
+                <img class="w-12 h-8" src="../assets/images/logo/Adobe_XD.png" alt="" />
+                <a>AdobeXD</a>
+              </div>
+              <div class="p-4 flex flex-col items-center">
+                <img class="w-8 h-8" src="../assets/images/logo/figma_ogo.png" alt="" />
+                <a>Figma</a>
+              </div>
+              <div class="p-4 flex flex-col items-center">
+                <img class="w-8 h-8" src="../assets/images/logo/vscode.png" alt="" />
+                <a>Vscode</a>
+              </div>
+              <div class="p-4 flex flex-col items-center">
+                <img class="w-8 h-8" src="../assets/images/logo/gitlens.png" alt="" />
+                <a>Gitlens</a>
+              </div>
+              <div class="p-4 flex flex-col items-center">
+                <img class="w-8 h-8" src="../assets/images/logo/firebase.png" alt="" />
+                <a>Firebase</a>
               </div>
             </div>
           </div>
