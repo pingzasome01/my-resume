@@ -32,6 +32,8 @@ onMounted(() => {
 </script>
 
 <template>
+  <div class="overflowpage">
+
   <header class="text-gray-700 body-font border-b border-gray-200">
     <div class="container mx-auto flex flex-wrap p-5 flex-col fixed z-10 md:flex-row items-center">
       <a
@@ -45,8 +47,8 @@ onMounted(() => {
       <nav class="md:ml-auto flex flex-wrap items-center text-base justify-center">
         <a href="#Home" class="mr-5 hover:text-gray-900">{{ $t('Navigator.Home') }}</a>
         <a href="#Aboutme" class="mr-5 hover:text-gray-900">{{ $t('Navigator.about') }}</a>
-        <a href="#Tools"  class="mr-5 hover:text-gray-900">{{ $t('Navigator.tool') }}</a>
-        <a   class="mr-5 hover:text-gray-900">{{ $t('Navigator.contact') }}</a>
+        <a href="#Tools" class="mr-5 hover:text-gray-900">{{ $t('Navigator.tool') }}</a>
+        <a class="mr-5 hover:text-gray-900">{{ $t('Navigator.contact') }}</a>
       </nav>
       <div class="flex">
         <img
@@ -88,7 +90,6 @@ onMounted(() => {
             class="inline-flex text-white hover:animate-bounce bg-indigo-500 border-0 py-2 px-6 focus:outline-none hover:bg-indigo-600 rounded text-lg"
             >AboutMe</a
           >
-          
         </div>
       </div>
       <div data-aos="fade-left" class="lg:max-w-lg lg:w-full md:w-1/2 w-5/6">
@@ -176,10 +177,10 @@ onMounted(() => {
   <!-- Myaboutme -->
   <section id="Aboutme" class="text-gray-700 body-font border-t border-gray-200">
     <div class="container px-5 py-24 mx-auto flex flex-wrap">
-      <div data-aos="fade-right" class="lg:w-1/2 w-full mb-10 lg:mb-0 rounded-lg overflow-hidden">
+      <div data-aos="fade-right" class="lg:w-1/2 sm:flex sm:flex-col sm:items-center w-full mb-10 lg:mb-0 rounded-lg overflow-hidden">
         <img
           alt="feature"
-          class="object-cover object-center w-5/6"
+          class="object-cover object-center  "
           src="../assets/images/imageprofile/imagepingpong2.jpg"
         />
       </div>
@@ -188,7 +189,7 @@ onMounted(() => {
       >
         <div class="flex flex-col mb-10 lg:items-start items-center">
           <div
-          data-aos="fade-left"
+            data-aos="fade-left"
             class="w-12 h-12 inline-flex items-center justify-center rounded-full bg-indigo-100 text-indigo-500 mb-5"
           >
             <svg
@@ -207,10 +208,16 @@ onMounted(() => {
             </svg>
           </div>
           <div class="flex-grow">
-            <h2 data-aos="fade-left" data-aos-delay="500"   class="text-gray-900 text-lg title-font font-medium mb-3 profilefont">
+            <h2
+              data-aos="fade-left"
+              data-aos-delay="500"
+              class="text-gray-900 text-lg title-font font-medium mb-3 profilefont"
+            >
               {{ $t('Myabout.head') }}
             </h2>
-            <p data-aos="fade-left" data-aos-delay="700" class="leading-relaxed text-base">{{ $t('Myabout.graduated') }}</p>
+            <p data-aos="fade-left" data-aos-delay="700" class="leading-relaxed text-base">
+              {{ $t('Myabout.graduated') }}
+            </p>
             <!-- <a class="mt-3 text-indigo-500 inline-flex items-center">Learn More
             <svg fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" class="w-4 h-4 ml-2" viewBox="0 0 24 24">
               <path d="M5 12h14M12 5l7 7-7 7"></path>
@@ -220,7 +227,7 @@ onMounted(() => {
         </div>
         <div class="flex flex-col mb-10 lg:items-start items-center">
           <div
-          data-aos="fade-left"
+            data-aos="fade-left"
             class="w-12 h-12 inline-flex items-center justify-center rounded-full bg-indigo-100 text-indigo-500 mb-5"
           >
             <svg
@@ -239,14 +246,24 @@ onMounted(() => {
             </svg>
           </div>
           <div class="flex-grow">
-            <h2 data-aos="fade-left" data-aos-delay="500" class="text-gray-900 text-lg title-font font-medium profilefont">
+            <h2
+              data-aos="fade-left"
+              data-aos-delay="500"
+              class="text-gray-900 text-lg title-font font-medium profilefont"
+            >
               {{ $t('Myabout.head1') }}
             </h2>
-            <p data-aos="fade-left" data-aos-delay="700" class="leading-relaxed text-base">- {{ $t('Myabout.experience1') }}</p>
+            <p data-aos="fade-left" data-aos-delay="700" class="leading-relaxed text-base">
+              - {{ $t('Myabout.experience1') }}
+            </p>
             <br />
-            <p data-aos="fade-left" data-aos-delay="700" class="leading-relaxed text-base">- {{ $t('Myabout.experience2') }}</p>
+            <p data-aos="fade-left" data-aos-delay="700" class="leading-relaxed text-base">
+              - {{ $t('Myabout.experience2') }}
+            </p>
             <br />
-            <p data-aos="fade-left" data-aos-delay="700" class="leading-relaxed text-base">- {{ $t('Myabout.experience3') }}</p>
+            <p data-aos="fade-left" data-aos-delay="700" class="leading-relaxed text-base">
+              - {{ $t('Myabout.experience3') }}
+            </p>
             <!-- <a class="mt-3 text-indigo-500 inline-flex items-center">Learn More
             <svg fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" class="w-4 h-4 ml-2" viewBox="0 0 24 24">
               <path d="M5 12h14M12 5l7 7-7 7"></path>
@@ -256,7 +273,7 @@ onMounted(() => {
         </div>
         <div class="flex flex-col mb-10 lg:items-start items-center">
           <div
-          data-aos="fade-left"
+            data-aos="fade-left"
             class="w-12 h-12 inline-flex items-center justify-center rounded-full bg-indigo-100 text-indigo-500 mb-5"
           >
             <svg
@@ -273,39 +290,46 @@ onMounted(() => {
             </svg>
           </div>
           <div class="flex-grow">
-            <h2 data-aos="fade-left" data-aos-delay="500" class="text-gray-900 text-lg title-font font-medium mb-3 profilefont">
+            <h2
+              data-aos="fade-left"
+              data-aos-delay="500"
+              class="text-gray-900 text-lg title-font font-medium mb-3 profilefont"
+            >
               {{ $t('Myabout.head2') }}
             </h2>
-            <p data-aos="fade-left" data-aos-delay="700" class="leading-relaxed text-base">{{ $t('Myabout.aptitude') }}</p>
-            <p data-aos="fade-left" data-aos-delay="700" class="leading-relaxed text-base">{{ $t('Myabout.aptitude2') }}</p>
-            <!-- <a class="mt-3 text-indigo-500 inline-flex items-center">Learn More
+            <p data-aos="fade-left" data-aos-delay="700" class="leading-relaxed text-base">
+              {{ $t('Myabout.aptitude') }}
+            </p>
+            <p data-aos="fade-left" data-aos-delay="700" class="leading-relaxed text-base">
+              {{ $t('Myabout.aptitude2') }}
+            </p>
+            <a href="../assets/images/Lemon.jpg" download class="mt-3  text-indigo-500 inline-flex items-center">Dowloade Myresume
             <svg fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" class="w-4 h-4 ml-2" viewBox="0 0 24 24">
               <path d="M5 12h14M12 5l7 7-7 7"></path>
             </svg>
-          </a> -->
+          </a>
           </div>
         </div>
       </div>
     </div>
   </section>
   <!-- MyTools -->
-  <section id="Tools" class="text-gray-700 body-font border-t border-gray-200">
+  <section id="Tools" class="text-gray-700 body-font border-t border-gray-200" >
     <div class="container px-5 py-24 mx-auto">
       <div class="flex flex-wrap w-full mb-20 flex-col items-center text-center">
-        <h1 class="sm:text-3xl text-2xl font-medium title-font mb-2 text-gray-900">
-          Pitchfork Kickstarter Taxidermy
+        <h1 class="sm:text-3xl text-2xl font-medium title-font mb-2 text-gray-900 " data-aos="fade-up">
+          {{ $t('Myskill.headskill') }}
         </h1>
-        <p class="lg:w-1/2 w-full leading-relaxed text-base">
-          Whatever cardigan tote bag tumblr hexagon brooklyn asymmetrical gentrify, subway tile poke
-          farm-to-table.
+        <p class="lg:w-1/2 w-full leading-relaxed text-base" data-aos="fade-up">
+         {{ $t ('Myskill.title') }}
         </p>
       </div>
-      <div class="flex flex-wrap -m-4">
-        <div class="xl:w-1/3 md:w-1/2 p-4 sm:w-1/3">
-          <div class="border border-gray-300 p-6 rounded-lg">
-            <div class=" lg:flex md:flex sm:flex-none">
+      <div class=" flex flex-wrap -m-4">
+        <div class="xl:w-1/3 md:w-full  p-4 sm:w-full w-full">
+          <div class="border border-gray-300 p-6 rounded-lg" data-aos="fade-up">
+            <div class="lg:flex md:flex sm:flex-none" >
               <div
-                class="w-10 h-10 inline-flex items-center justify-center rounded-full  bg-indigo-100 text-indigo-500 mb-4"
+                class="w-10 h-10 animate-pulse inline-flex items-center justify-center rounded-full bg-indigo-100 text-indigo-500 mb-4"
               >
                 <svg
                   fill="none"
@@ -319,20 +343,27 @@ onMounted(() => {
                   <path d="M22 12h-4l-3 9L9 3l-3 9H2"></path>
                 </svg>
               </div>
-              <h2 class="text-lg p-1 px-2  text-gray-900 text-center font-medium title-font profilefont mb-2">Framework</h2>
-            </div>
-            <div class="p-4" >
-              <img class="w-8 h-8 " src="../assets/images/logo/vue-js.png" alt="">
-              <a>vue.js</a>
+              <h2
+                class="text-lg p-1 px-2 text-gray-900 text-center font-medium title-font profilefont mb-2 "
+              >
+                Framework
+              </h2>
+            </div> 
+            <div class="grid lg:grid-cols-5 md:grid-cols-3 sm:grid-cols-2"  >
+
+              <div class="p-4 flex flex-col items-left">
+                <img class="w-8 h-8" src="../assets/images/logo/vue-js.png" alt="" />
+                <a>vue.js</a>
+              </div>
+             
             </div>
           </div>
         </div>
-        <div class="xl:w-1/3 md:w-1/2 p-4">
+        <div class="xl:w-1/3 md:w-full  sm:w-full w-full p-4" data-aos="fade-up">
           <div class="border border-gray-300 p-6 rounded-lg">
-            <div class=" lg:flex md:flex sm:flex-none">
-
+            <div class="lg:flex md:flex sm:flex-none">
               <div
-                class="w-10 h-10 inline-flex items-center justify-center rounded-full bg-indigo-100 text-indigo-500 mb-4"
+                class="w-10 h-10 animate-pulse inline-flex items-center justify-center rounded-full bg-indigo-100 text-indigo-500 mb-4"
               >
                 <svg
                   fill="none"
@@ -348,70 +379,111 @@ onMounted(() => {
                   <path d="M20 4L8.12 15.88M14.47 14.48L20 20M8.12 8.12L12 12"></path>
                 </svg>
               </div>
-              <h2 class="text-lg text-gray-900 font-medium title-font mb-2 p-1 px-2 profilefont">Css Framework & Tools</h2>
+              <h2 class="text-lg text-gray-900 font-medium title-font mb-2 p-1 px-2 profilefont flex flex-col sm:items-center items-center">
+                Css Framework & Tools
+              </h2>
             </div>
-            <div class="grid grid-cols-5 ">
-              
-              <div class="p-4" >
-                <img class="w-8 h-8 " src="../assets/images/logo/Tailwind.png" alt="">
+            <div class="grid lg:grid-cols-5 md:grid-cols-3 sm:grid-cols-2">
+              <div class="p-4 flex flex-col items-center">
+                <img class="w-8 h-8" src="../assets/images/logo/Tailwind.png" alt="" />
                 <a>Tailwind</a>
               </div>
-              <div class="p-4" >
-                <img class="w-8 h-8 " src="../assets/images/logo/bootstap.png" alt="">
+              <div class="p-4 flex flex-col items-center">
+                <img class="w-8 h-8" src="../assets/images/logo/bootstap.png" alt="" />
                 <a>Bootsrap</a>
               </div>
-              <div class="p-4" >
-                <img class="w-8 h-8 " src="../assets/images/logo/swal2-logo-square.png" alt="">
+              <div class="p-4 flex flex-col items-center">
+                <img class="w-8 h-8" src="../assets/images/logo/swal2-logo-square.png" alt="" />
                 <a>Swal2</a>
               </div>
-              <div class="p-4" >
-                <img class="w-8 h-8 " src="../assets/images/logo/vuetify.svg" alt="">
+              <div class="p-4 flex flex-col items-center">
+                <img class="w-8 h-8" src="../assets/images/logo/vuetify.svg" alt="" />
                 <a>Vuetify</a>
               </div>
-              <div class="p-4" >
-                <img class="w-12 h-12 -my-2  " src="../assets/images/logo/flowbite.jpeg" alt="">
+              <div class="p-4 flex flex-col items-center">
+                <img class="w-12 h-12 -my-2" src="../assets/images/logo/flowbite.jpeg" alt="" />
                 <a>Flowbite</a>
               </div>
-              <div class="p-4" >
-                <img class="w-8 h-8 " src="../assets/images/logo/swiper.png" alt="">
+              <div class="p-4 flex flex-col items-center">
+                <img class="w-8 h-8" src="../assets/images/logo/swiper.png" alt="" />
                 <a>Swiper</a>
+              </div>
+              <div class="p-4 flex flex-col items-center">
+                <img class="w-8 h-8" src="../assets/images/logo/daisy.webp" alt="" />
+                <a>DaisyUi</a>
               </div>
             </div>
           </div>
         </div>
-        <div class="xl:w-1/3 md:w-1/2 p-4">
+        <div class="xl:w-1/3  md:w-full  sm:w-full w-full p-4" data-aos="fade-up">
           <div class="border border-gray-300 p-6 rounded-lg">
-            <div
-              class="w-10 h-10 inline-flex items-center justify-center rounded-full bg-indigo-100 text-indigo-500 mb-4"
-            >
-              <svg
-                fill="none"
-                stroke="currentColor"
-                stroke-linecap="round"
-                stroke-linejoin="round"
-                stroke-width="2"
-                class="w-6 h-6"
-                viewBox="0 0 24 24"
+            <div class="lg:flex md:flex  ">
+              <div
+                class="w-10 h-10 animate-pulse   justify-center rounded-full bg-indigo-100 text-indigo-500 mb-4 flex flex-col  items-center"
               >
-                <path d="M20 21v-2a4 4 0 00-4-4H8a4 4 0 00-4 4v2"></path>
-                <circle cx="12" cy="7" r="4"></circle>
-              </svg>
+                <svg
+                  fill="none"
+                  stroke="currentColor"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  stroke-width="2"
+                  class="w-6 h-6"
+                  viewBox="0 0 24 24"
+                >
+                  <path d="M20 21v-2a4 4 0 00-4-4H8a4 4 0 00-4 4v2"></path>
+                  <circle cx="12" cy="7" r="4"></circle>
+                </svg>
+              </div>
+              <h2 class="text-lg text-gray-900 font-medium title-font mb-2 p-1 px-2 profilefont flex flex-col sm:items-center items-center">
+                Other
+              </h2>
             </div>
-            <h2 class="text-lg text-gray-900 font-medium title-font mb-2">Neptune</h2>
-            <p class="leading-relaxed text-base">
-              Fingerstache flexitarian street art 8-bit waist co, subway tile poke farm.
-            </p>
+            <div class="grid lg:grid-cols-5 md:grid-cols-3 sm:grid-cols-2">
+              <div class="p-4 flex flex-col items-center">
+                <img class="w-8 h-8" src="../assets/images/logo/github.png" alt="" />
+                <a>Github</a>
+              </div>
+              <div class="p-4 flex flex-col items-center">
+                <img class="w-8 h-8" src="../assets/images/logo/gitlab.png" alt="" />
+                <a>Gitlab</a>
+              </div>
+              <div class="p-4 flex flex-col items-center">
+                <img class="w-8 h-8" src="../assets/images/logo/bitbug.png" alt="" />
+                <a>Bitbucket</a>
+              </div>
+              <div class="p-4 flex flex-col items-center">
+                <img class="w-8 h-8" src="../assets/images/logo/sourcetree.png" alt="" />
+                <a>Sourcetree</a>
+              </div>
+              <div class="p-4 flex flex-col items-center">
+                <img class="w-12 h-8" src="../assets/images/logo/Adobe_XD.png" alt="" />
+                <a>AdobeXD</a>
+              </div>
+              <div class="p-4 flex flex-col items-center">
+                <img class="w-8 h-8" src="../assets/images/logo/figma_ogo.png" alt="" />
+                <a>Figma</a>
+              </div>
+              <div class="p-4 flex flex-col items-center">
+                <img class="w-8 h-8" src="../assets/images/logo/vscode.png" alt="" />
+                <a>Vscode</a>
+              </div>
+              <div class="p-4 flex flex-col items-center">
+                <img class="w-8 h-8" src="../assets/images/logo/gitlens.png" alt="" />
+                <a>Gitlens</a>
+              </div>
+              <div class="p-4 flex flex-col items-center">
+                <img class="w-8 h-8" src="../assets/images/logo/firebase.png" alt="" />
+                <a>Firebase</a>
+              </div>
+            </div>
           </div>
         </div>
-        
-        
-        
       </div>
-      <button
+      <!-- <button
         class="flex mx-auto mt-16 text-white bg-indigo-500 border-0 py-2 px-8 focus:outline-none hover:bg-indigo-600 rounded text-lg"
       >
         Button
-      </button>
+      </button> -->
     </div>
   </section>
   <section class="text-gray-700 body-font border-t border-gray-200">
@@ -791,9 +863,11 @@ onMounted(() => {
       </div>
     </div>
   </footer>
-  <!-- <a href="https://github.com/mertJF/tailblocks" class="rounded-full w-12 h-12 bg-gray-100 fixed bottom-0 right-0 flex items-center justify-center text-gray-800 mr-8 mb-8 shadow-sm border-gray-300 border" target="_blank"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+  <a href="https://github.com/mertJF/tailblocks" class="rounded-full w-12 h-12 bg-gray-100 fixed bottom-0 right-0 flex items-center justify-center text-gray-800 mr-8 mb-8 shadow-sm border-gray-300 border" target="_blank"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
     <path d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 0 0-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0 0 20 4.77 5.07 5.07 0 0 0 19.91 1S18.73.65 16 2.48a13.38 13.38 0 0 0-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 0 0 5 4.77a5.44 5.44 0 0 0-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 0 0 9 18.13V22"></path>
-  </svg></a> -->
+  </svg></a>
+</div>
+
 </template>
 <style>
 @font-face {
@@ -815,5 +889,9 @@ a {
 }
 p {
   font-family: 'profilefont2', sans-serif;
+}
+
+.overflowpage{
+   overflow-x: hidden;
 }
 </style>
