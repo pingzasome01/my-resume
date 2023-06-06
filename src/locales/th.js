@@ -17,7 +17,7 @@ export default {
     head1:'ประสบการณ์',
     head2:'ความถนัดและความสนใจ',
     graduated :' จบการศึกษาจาก คณะวิศวกรรมศาสตร์ สาขาวิศวกรรมสารสนเทศ จากสถาบันเทคโนโลยีพระจอมเกล้าเจ้าคุณทหารลาดกระบัง วิทยาเขตชุมพรเขตรอุดมศักดิ์ จังหวัดชุมพร  ',
-    experience1 :'ฝึกงานสหกิจศึกษาที่บริษัท IBM Solution Delivery ในตำเเหน่ง IT Security ระยะเวลา 6 เดือน',
+    experience1 :'ฝึกงานสหกิจศึกษาที่บริษัท IBM Solution Delivery ในตำเเหน่ง IT Security ระยะเวลา 6 เดือน โปรเจกต์ที่ฝึกงาน คือระบบจัดการข้อมูลภายในเว็ปไซด์ เเละส่งออกข้อมูล เป็นไฟล์ csv',
     experience2 :'ทำ Mini Project เกี่ยวกับ เครื่องวัดอุณภูมิเเสดงผลขึ้นหน้า website เเละ Mobile Application ช่วงศึกษาปีที่ 4 ',
     experience3 :'ขณะนี้กำลังทำงานอยู่ที่บริษัท Datafirst ในตำเเหน่ง Deverlopers',
     aptitude:'ขณะนี้งานที่กำลังทำอยู่จะเป็นส่วนของ front-end เป็นหลัก สกิลติดตัวที่มีก็จะเป็นในส่วนของ Design , css framework , vue.js(vite) (tailwind,bootstrap,vuetify) , animation on scroll , Responsive Design ',
