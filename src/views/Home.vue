@@ -37,11 +37,7 @@ onMounted(() => {
       <div
         class="container mx-auto flex flex-wrap p-5 flex-col fixed z-10 md:flex-row items-center"
       >
-        <a
-          class="flex title-font font-medium items-center text-gray-900 mb-4 md:mb-0"
-          href="https://tailblocks.cc"
-          target="_blank"
-        >
+        <a class="flex title-font font-medium items-center text-gray-900 mb-4 md:mb-0">
           <img class="h-12 w-12 rounded-full" src="../assets/images/Lemon.jpg" alt="" />
           <span class="ml-3 text-xl profilefont">My Personal Profile</span>
         </a>
@@ -74,11 +70,17 @@ onMounted(() => {
     <section id="Home" class="text-gray-700 body-font">
       <div class="container mx-auto flex px-5 py-24 md:flex-row flex-col items-center">
         <div
-          data-aos="fade-right"
           class="lg:flex-grow md:w-1/2 lg:pr-24 md:pr-16 flex flex-col md:items-start md:text-left mb-16 md:mb-0 items-center text-center"
         >
-          <h1 class="title-font sm:text-4xl text-4xl font-bold mb-4   text-yellow-400">
-            {{ $t('MyHome.Me') }}<a class="title-font sm:text-4xl text-4xl font-bold mb-4   text-gray-800">o</a>
+          <h1
+            class="title-font sm:text-4xl text-4xl font-bold text-yellow-400 pt-20 sm:pt-20 md:pt-10"
+          >
+            {{ $t('MyHome.Me') }}
+            <div class="title-font sm:text-4xl text-4xl font-bold text-gray-800">
+              <p class="wrapper">
+                <a class="typing-demo"> I'm Deverloper </a>
+              </p>
+            </div>
             <br />
           </h1>
           <h1 class="title-font sm:text-4xl text-3xl mb-4 font-medium text-gray-900">
@@ -743,14 +745,18 @@ onMounted(() => {
     </footer>
     <a
       href="https://bitbucket.org/datafirst-front/resume/src/master/"
-      class="rounded-full w-12 h-12 bg-gray-100 fixed bottom-0 right-0 flex items-center justify-center text-gray-800 mr-8 mb-8 shadow-sm border-gray-300 border "
+      class="rounded-full w-12 h-12 bg-gray-100 fixed bottom-0 right-0 flex items-center justify-center text-gray-800 mr-8 mb-8 shadow-sm border-gray-300 border"
       title="name"
       alt="name"
       target="_blank"
-      >
-      <svg width="24" height="24" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><!--! Font Awesome Free 6.1.1 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2022 Fonticons, Inc. --><path d="M22.2 32A16 16 0 0 0 6 47.8a26.35 26.35 0 0 0 .2 2.8l67.9 412.1a21.77 21.77 0 0 0 21.3 18.2h325.7a16 16 0 0 0 16-13.4L505 50.7a16 16 0 0 0-13.2-18.3 24.58 24.58 0 0 0-2.8-.2L22.2 32zm285.9 297.8h-104l-28.1-147h157.3l-25.2 147z"/></svg>
+    >
+      <svg width="24" height="24" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
+        <!--! Font Awesome Free 6.1.1 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2022 Fonticons, Inc. -->
+        <path
+          d="M22.2 32A16 16 0 0 0 6 47.8a26.35 26.35 0 0 0 .2 2.8l67.9 412.1a21.77 21.77 0 0 0 21.3 18.2h325.7a16 16 0 0 0 16-13.4L505 50.7a16 16 0 0 0-13.2-18.3 24.58 24.58 0 0 0-2.8-.2L22.2 32zm285.9 297.8h-104l-28.1-147h157.3l-25.2 147z"
+        />
+      </svg>
     </a>
-    
   </div>
 </template>
 <style>
@@ -777,5 +783,33 @@ p {
 
 .overflowpage {
   overflow-x: hidden;
+}
+
+.wrapper {
+  /*This part is important for centering*/
+  display: grid;
+  place-items: start;
+}
+
+.typing-demo {
+  width: 17vw;
+  animation: typing 2s steps(22), blink 0.5s step-end infinite alternate;
+  white-space: nowrap;
+  overflow: hidden;
+  border-right: 3px solid;
+  font-family: monospace;
+  font-size: 2vw;
+}
+
+@keyframes typing {
+  from {
+    width: 0%;
+  }
+}
+
+@keyframes blink {
+  50% {
+    border-color: transparent;
+  }
 }
 </style>
