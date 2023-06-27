@@ -2,12 +2,8 @@
 import { onMounted } from 'vue'
 import AOS from 'aos'
 import 'aos/dist/aos.css'
-import { useI18n } from 'vue-i18n'
-const { locale } = useI18n()
-
-const change = (e) => {
-  locale.value = e
-}
+import Lottie from '../components/Lottie.vue'
+import Topbar from '../components/Topbar.vue'
 
 onMounted(() => {
   console.log(screen.width)
@@ -33,41 +29,12 @@ onMounted(() => {
 
 <template>
   <div class="overflowpage">
-    <header class="text-gray-700 body-font border-b border-gray-200">
-      <div
-        class="container mx-auto flex flex-wrap p-5 flex-col fixed z-10 md:flex-row items-center"
-      >
-        <a class="flex title-font font-medium items-center text-gray-900 mb-4 md:mb-0">
-          <img class="h-12 w-12 rounded-full" src="../assets/images/Lemon.jpg" alt="" />
-          <span class="ml-3 text-xl profilefont">My Personal Profile</span>
-        </a>
-        <nav class="md:ml-auto flex flex-wrap items-center text-base justify-center">
-          <a href="#Home" class="mr-5 hover:text-gray-900">{{ $t('Navigator.Home') }}</a>
-          <a href="#Aboutme" class="mr-5 hover:text-gray-900">{{ $t('Navigator.about') }}</a>
-          <a href="#Tools" class="mr-5 hover:text-gray-900">{{ $t('Navigator.tool') }}</a>
-          <a class="mr-5 hover:text-gray-900">{{ $t('Navigator.contact') }}</a>
-        </nav>
-        <div class="flex">
-          <img
-            class="w-9 h-9 p-1 mt-1"
-            src="../assets/images/flag/Thailand.png"
-            @click="change('th')"
-          />
-          <img
-            class="w-11 p-1 h-11"
-            src="../assets/images/flag/England-Flag-Transparent-Free-PNG.png"
-            @click="change('en')"
-          />
-        </div>
-        <!-- <button class="inline-flex items-center bg-gray-200 border-0 py-1 px-3 focus:outline-none hover:bg-gray-300 rounded text-base mt-4 md:mt-0">Button
-      <svg fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" class="w-4 h-4 ml-1" viewBox="0 0 24 24">
-        <path d="M5 12h14M12 5l7 7-7 7"></path>
-      </svg>
-    </button> -->
-      </div>
-    </header>
+    <div>
+      <Topbar />
+    </div>
     <!-- MyHome -->
-    <section id="Home" class="text-gray-700 body-font">
+    <section id="Home" class="text-gray-700 body-font py-20">
+      <!--  -->
       <div class="container mx-auto flex px-5 py-24 md:flex-row flex-col items-center">
         <div
           class="lg:flex-grow md:w-1/2 lg:pr-24 md:pr-16 flex flex-col md:items-start md:text-left mb-16 md:mb-0 items-center text-center"
@@ -76,9 +43,9 @@ onMounted(() => {
             class="title-font sm:text-4xl text-4xl font-bold text-yellow-400 pt-20 sm:pt-20 md:pt-10"
           >
             {{ $t('MyHome.Me') }}
-            <div class="title-font sm:text-4xl text-4xl font-bold text-gray-800">
+            <div class="title-font font-bold text-gray-800">
               <p class="wrapper">
-                <a class="typing-demo"> I'm Deverloper </a>
+                <a class="typing-demo sm:w-72 w-44 sm:text-4xl text-2xl"> I'm Pingpong</a>
               </p>
             </div>
             <br />
@@ -95,12 +62,8 @@ onMounted(() => {
             >
           </div>
         </div>
-        <div data-aos="fade-left" class="lg:max-w-lg lg:w-full md:w-1/2 w-5/6">
-          <img
-            class="object-cover object-center rounded"
-            alt="hero"
-            src="../assets/images/imageprofile/imagepingpong.jpg"
-          />
+        <div class="lg:max-w-lg lg:w-full md:w-1/2 w-5/6">
+          <Lottie />
         </div>
       </div>
     </section>
@@ -792,13 +755,11 @@ p {
 }
 
 .typing-demo {
-  width: 17vw;
   animation: typing 2s steps(22), blink 0.5s step-end infinite alternate;
   white-space: nowrap;
   overflow: hidden;
   border-right: 3px solid;
   font-family: monospace;
-  font-size: 2vw;
 }
 
 @keyframes typing {
